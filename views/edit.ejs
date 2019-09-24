@@ -1,0 +1,32 @@
+<% include partials/header %>
+<main class="pa4 black-80 center">
+  <form class="measure center" action="/projects" method="post">
+    <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
+      <legend class="f4 fw6 ph0 mh0">Edit Project</legend>
+      <div class="mt3">
+        <label class="db fw6 lh-copy f6" for="name">Name or Title</label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="name"  id="name">
+      </div>
+      <div class="mt3">
+        <label class="db fw6 lh-copy f6" for="tech">Tech Used</label>
+        <input class="pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="tech"  id="tech">
+      </div>
+      <div class="mv3">
+        <label class="db fw6 lh-copy f6" for="image">Image url</label>
+        <input class="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="image1"  id="image">
+      </div>
+      <div class="mv3">
+        <label class="db fw6 lh-copy f6" for="description">Project Description</label>
+        <textarea class="b h4 pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="description" name="description"  id="description"></textarea>
+      </div>
+      <div class="mv3">
+        <label class="db fw6 lh-copy f6" for="reflections">Project Reflections</label>
+        <textarea class="b h4 pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="text" name="reflections"  id="reflections"></textarea>
+      </div>
+    </fieldset>
+    <div class="">
+      <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" value="Create">
+    </div>
+  </form>
+</main>
+<% include partials/footer %>

@@ -1,0 +1,18 @@
+<% include partials/header %>
+<article class="mw5 mw7-ns center  pa3 ph5-ns">
+  <form action="/register" method="POST" accept-charset="utf-8">
+    <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
+      <legend class="ph0 mh0 fw6 clip">Sign Up</legend>
+      <div class="mt3">
+        <label class="db fw4 lh-copy f6" for="username">Email address</label>
+        <input class="pa2 input-reset ba bg-transparent w-100 measure" type="email" name="username"  id="username">
+      </div>
+      <div class="mt3">
+        <label class="db fw4 lh-copy f6" for="password">Password</label>
+        <input class="pa2 input-reset ba bg-transparent w-100 measure" type="password" name="password"  id="password">
+      </div>
+    </fieldset>
+    <div class="mt3"><input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6" type="submit" value="Sign Up"></div>
+  </form>
+</article>
+<% include partials/footer %>

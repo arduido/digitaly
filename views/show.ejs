@@ -1,0 +1,37 @@
+<% include partials/header %>
+
+<article data-name="article-full-bleed-background">
+  <a href="/projects" class="f6 link dim ph3 pv2 mt1 dib white bg-near-black"> < Back</a>
+  <div class="cf">
+    <div class="fl pa3 pa4-ns bg-white black-70 measure-narrow f3 times">
+      <header class="bb b--black-70 pv4">
+        <h3 class="f2 fw7 ttu tracked lh-title mt0 mb3 avenir"><%= project.name %></h3>
+        <!-- <h4 class="f3 fw4 i lh-title mt0"><%= project.tech %></h4>
+        <h5 class="f3 fw4 i lh-title mt0"><%= project.time %></h5> -->
+      </header>
+      <section class="pt5 pb4">
+        <p class="times lh-copy measure f4 mt0">
+          <%= project.description %>
+        </p>
+      </section>
+    </div>
+    <main class="w-100 cf helvetica dark-gray bg-white pa3 pa4-m pa5-l mw9 center">
+      <div class="fl w-50 pr2 pr3-l mb3 mb4-l">
+        <div class="cover pv5 pv6-m pv7-l" style="background:black url(<%= project.image %>) center;"></div>
+      </div>
+      <div class="fl w-100 w-50-l pr2-l pl2-ns mb4 mb0-l mb4 outline">
+        <div class="pa4">
+          <h1 class="f4 f2-l fw7 mt0 pv3-l bb-l bb--black">#<%= project._id %></h1>
+          <p class="lh-copy mt2 mt3-m mt5-l f6">
+            <span class="db-ns f6 fw7 lh-solid mb3 mb0-m mb4-l">Technology used in development: <%= project.tech %></span>
+            <!-- <p class="fw9 f6 f1-l db lh-title mb3 mb4-l"><%= project.tech %></p> -->
+            <span class="db-l measure-wide">
+              <%= project.reflections %>
+          </span>
+          </p>
+        </div>
+      </div>
+  </main>
+
+
+<% include partials/footer %>

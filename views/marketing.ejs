@@ -1,0 +1,77 @@
+<% include partials/header %>
+<article data-name="article-full-bleed-background" class="bg-light-gray">
+  <a href="/" class="f6 link dim ph3 pv2 mt1 dib white bg-near-black"> < Back</a>
+  <div class="ph3 ph5-ns flex justify-center">
+    <h1 class="mb0 tl pv0">Ads / Marketing</h1>
+  </div>
+  <section class="pa3 pa5-ns b--black-10 black-70 flex justify-center">
+    <main class="black-80 w-60 w-100 flex-wrap row flex justify-center">
+      <form class="w-60-ns w-100 center bg-white pa4" action="/projects" method="post">
+        <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
+          <legend class="f4 fw6 mh0">Checkout</legend>
+          <div class="mt3 flex justify-center">
+            <div class="w-100 pv1 mr2">
+              <label class="db fw6 lh-copy f6" for="fname">First Name</label>
+              <input class="pa2 input-reset b--none bg-near-white black hover-bg-black hover-white w-100" type="text" name="fname"  id="fname" placeholder="John">
+            </div>
+            <div class="w-100 pv1">
+              <label class="db fw6 lh-copy f6" for="lname">Last Name</label>
+              <input class="pa2 input-reset b--none bg-near-white black hover-bg-black hover-white w-100" type="text" name="lname"  id="lname" placeholder="Doe">
+            </div>
+          </div>
+          <div class="mv3">
+            <label class="db fw6 lh-copy f6" for="tech">Email</label>
+            <input class="pa2 input-reset b--none bg-near-white black hover-bg-black hover-white w-60" type="email" name="email"  id="email" placeholder="john@mailspot.com">
+          </div>
+          <hr class="mv1">
+          <h3 class="f4 fw6 mh0">Payment Details</h3>
+          <div class="mv3">
+            <label class="db fw6 lh-copy f6" for="image">Card Number</label>
+            <input class="b pa2 input-reset b--none bg-near-white black hover-bg-black hover-white w-80" type="creditcard" name="ccnumber"  id="ccnumber">
+          </div>
+          <div class="mt3 flex justify-between">
+            <div class="w-60 pv1">
+              <label class="db fw6 lh-copy f6" for="exp">Exp</label>
+              <input class="pa2 input-reset b--none bg-near-white black hover-bg-black hover-white w-60" type="month" name="exp"  id="exp" placeholder="MM/YY">
+            </div>
+            <div class="w-40 pv1">
+              <label class="db fw6 lh-copy f6" for="cvc">CVC</label>
+              <input class="pa2 input-reset b--none bg-near-white black hover-bg-black hover-white w-50" type="number" name="cvc"  id="cvc" placeholder="444">
+            </div>
+          </div>
+        </fieldset>
+        <div class="flex justify-center">
+          <input class="f4 no-underline grow dib v-mid black-80 bn bg-washed-green br3 ph0 pv2 mt3 w-100 fw6" type="submit" value="Get Started">
+        </div>
+      </form>
+      <article class="w-40-ns w-100 center ph2 br2 pv4 bg-washed-green black-80">
+        <h1 class="fw6 f3 f2-ns tc lh-title mt0 mb3">
+          <span class="f7 v-btm">base plan</span>
+          <span class="f6 v-top">$</span>
+          199
+          <span class="f6 v-btm">/mo</span>
+        </h1>
+        <h2 class="fw2 f4 lh-copy mt0 mb3">
+          This special promotion includes a growth hacking assessment to define market positioning and the following implementations monthly:
+        </h2>
+        <ul class="fw1 f5 mt0 mb3">
+          <li>$50/mo in ad spend</li>
+          <li>Once/mo (article post / lead magnet)</li>
+          <li>Once/wk google analytics campaign assessment</li>
+        </ul>
+        <div>
+          <p class="f6 b--dark-green pv2 ph3">
+            "This is the best service we have implemented in our marketing arsenal. The ROI has been exponential!"
+          </p>
+          <p class="f6  dark-greenpv2 ph3">
+            <img class="fl br-100 h3 w3 dib" src="http://tachyons.io/img/avatar_1.jpg" alt="avatar">
+            <span>Thom Jones</span>
+          </p>
+        </div>
+      </article>
+    </main>
+  </section>
+  <a class="f6 no-underline grow dib v-mid bg-blue white ba b--blue ph3 pv2 mv3" href="/services/new">+ request a service</a>
+</article>
+
+<% include partials/footer %>

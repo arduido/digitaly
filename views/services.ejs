@@ -1,0 +1,24 @@
+<% include partials/header %>
+<article data-name="article-full-bleed-background">
+  <a href="/" class="f6 link dim ph3 pv2 mt1 dib white bg-near-black"> < Back</a>
+  <section class="pa3 pa5-ns b--black-10 black-70 bg-white">
+    <h1>services</h1>
+    <section class="flex flex-wrap justify-around">
+      <% services.map(service => { %>
+      <article class="near-black fademove flex shadow-5 flex-wrap justify-center bg-white w-25-ns w-100 pa3 mr2 pa3 br3">
+        <div class="tc">
+          <img style="background-color:#337ab6" class="h4 w4 br-100 dib ba b--black-05 pa2" src="<%=service.image%>" alt="<%=service.image%>">
+          <h1 class="f5 f4-ns mb0"><%= service.name %></h1>
+          <hr class="mw6 b--white-90">
+        </div>
+        <p class="lh-copy measure center f6"><%= service.description %></p>
+        <a href="/services/<%= service._id %>" class="w-100 self-end tc no-underline grow dib f3 bg-blue near-white br2 b--blue ph3 pv2 mb3">Select</a>
+      </article>
+      <% }); %>
+    </section>
+    <a class="f6 no-underline grow dib v-mid bg-blue white ba b--blue ph3 pv2 mv3" href="/services/new">+ request a service</a>
+
+  </section>
+</article>
+
+<% include partials/footer %>

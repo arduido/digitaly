@@ -1,0 +1,22 @@
+<% include partials/header %>
+<article data-name="article-full-bleed-background">
+  <a href="/" class="f6 link dim ph3 pv2 mt1 dib white bg-near-black"> < Back</a>
+  <section class="pa3 pa5-ns b--black-10 black-70 bg-white">
+    <h1>projects</h1>
+    <section class="cf w-100 pa2-ns">
+      <div class="flex flex-wrap mt3">
+        <% projects.map(project => { %>
+        <article class="w-100 fademove w-50-m ba br3 b--black-05 ma3 mw5 w-25-ns pa2-ns">
+          <img class="w-auto h3 dib ba b--black-05 pa2" src="<%=project.image%>" alt="<%=project.image%>">
+          <a href="/projects/<%= project._id %>" class="ph2 ph0-ns pb3 link db">
+            <h3 class="f5 f4-ns mb0 black-90"><%= project.name %></h3>
+            <h3 class="f6 h3 overflow-hidden f5 fw4 mt2 black-60"><%= project.description %></h3>
+          </a>
+        </article>
+        <% }); %>
+      </div>
+    </section>
+    <a class="f6 link dim ph3 pv2 mb2 dib white bg-black" href="/projects/new">add project +</a>
+  </section>
+</article>
+<% include partials/footer %>
